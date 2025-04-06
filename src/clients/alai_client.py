@@ -150,7 +150,7 @@ class ALAIClient:
         data = {
             "auth_token": access_token,
             "additional_instructions": additional_instructions or "",
-            "images_on_slide": [],
+            "images_on_slide": [], # Dont know why but if we use the scraped images the socket returns 404 image not found error
             "layout_type": "AI_GENERATED_LAYOUT",
             "presentation_id": presentation_id,
             "slide_id": slide_id,

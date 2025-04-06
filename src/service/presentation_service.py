@@ -115,6 +115,7 @@ class PresentationService:
             # Create slide variants for each slide
             for slide in slides:
                 slide_outline = slide.get("slide_outline", "")
+                # Here if we send the image data from slide_otuline["slide_image"] the socket returns 404 hence I have commented it out
                 ALAIClient.create_slide_variants(
                     access_token,
                     presentation_id,
