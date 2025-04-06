@@ -1,8 +1,10 @@
 from ..functions.auth import get_user_token
 from flask import request, g, jsonify
+from functools import wraps
 
 def auth_required(f):
     """Decorator to enforce authentication on protected endpoints."""
+    @wraps(f)
     def wrapper(*args, **kwargs):
         username = request.headers.get("X-Username")
         if not username:
