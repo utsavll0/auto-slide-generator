@@ -1,6 +1,6 @@
 # ALAI Challenge
 
-This repository contains a Flask application for the ALAI Challenge.
+This repository contains a Flask application for creating automated slides by crawling the web.
 
 ## Installation
 
