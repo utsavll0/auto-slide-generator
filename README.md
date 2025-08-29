@@ -1,4 +1,4 @@
-# ALAI Challenge
+# Automatic Presentation Creator
 
 This repository contains a Flask application for creating automated slides by crawling the web.
 
